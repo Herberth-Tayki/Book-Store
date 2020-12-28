@@ -1,0 +1,89 @@
+@media(max-width: 760px){
+    main{
+        display: flex;
+        justify-content: center;
+    }
+
+    main form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        width: 90%;
+        height: 60vh;
+
+        background-color: white;
+
+        margin-top: 5rem;
+
+        border-radius: 4px;
+    }
+
+    main form h1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 100%;
+        height: 3.5rem;
+
+        color: black;
+
+        border-bottom: 1px solid rgb(26, 25, 25);
+
+        font-weight: 400;
+    }
+
+    main form .input-text{
+        display: flex;
+        justify-content: space-between;
+
+        color: black;
+
+        width: 70%;
+
+        margin-top: 3rem;
+
+        font-size: 14px;
+    }
+
+
+    main form .input-text a{
+        color: black;
+    }
+
+    main form input{
+        width: 70%;
+        height: 2.3rem;
+    }
+
+    main form button{
+        margin-top: 2rem;
+
+        background: rgb(214, 7, 7);
+        color: white;
+
+        width: 70%;
+        height: 2.5rem;
+
+        border: none;
+        border-radius: 5px;
+    }
+
+    main form .register-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        color: black;
+
+        margin-top: 4rem;
+
+        font-size: 13px;
+    }
+
+    main form .register-text a{
+        color: black;
+    }
+}

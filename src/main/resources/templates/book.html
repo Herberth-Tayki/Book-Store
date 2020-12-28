@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/main/main.css">
+        <link rel="stylesheet" href="/css/main/header.css">
+        <link rel="stylesheet" href="/css/book/book.css">
+
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;600;800&display=swap" rel="stylesheet"> 
+        <title>Books Library</title>
+    </head>
+
+    <body>
+        <header>
+            <div class="container">
+                
+                <form action="searchBook" method="GET">
+                    <input type="text" id="search" name="search" placeholder="Encontre seu livro favorito" required>
+            
+                    <button type="submit" title="Search">
+                        <img src="/images/search-icon.svg" alt="">
+                    </button>
+                </form>
+
+                <a class="login-button" href="/loginPage">
+                    <img src="/images/login-icon.png" alt="Login Image">
+
+                    <span>
+                        <p>Entre ou </p>
+                        <p>Cadastre-se</p>
+                    </span>
+                </a>
+            </div>
+        </header>
+
+        <main>
+
+            <div class="book" th:each="book : ${books}">
+                <div class="container">
+                    <div class="book-image">
+                        <img src="https://source.unsplash.com/random?" alt="">
+                    </div>
+
+                    <div class="book-information">
+                        <p class="book-title"><span th:text="${book.nameOfBook}"></span></p>
+                        <p class="book-id"><span th:text="'(código: ' + ${book.id} + ')'"></span></p>
+
+                        <p class="book-description"><span th:text="${book.description}"></span></p>
+                    </div>
+                </div>
+
+                <div class="book-price">
+                    <p class="price-value"><span th:text="'R$ ' + ${book.price}"></span></p>
+                    <p>Divida em até 12x no cartão sem juros</p>
+
+                    <a href="#">Comprar</a>
+                </div>
+            </div>
+        </main>
+
+    </body>
+</html>

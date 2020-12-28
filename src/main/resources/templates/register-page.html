@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/main/main.css">
+        <link rel="stylesheet" href="/css/main/header.css">
+        <link rel="stylesheet" href="/css/register-page/register-page.css">
+        
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;600;800&display=swap" rel="stylesheet"> 
+        
+        <title>Register</title>
+    </head>
+
+    <body>
+        <header>
+        </header>
+
+        <main>
+
+            <form action="register" method="POST" th:object="${user}">
+                <h1>Registrar Conta</h1>
+
+                <p class="input-text" id="username-text">Nome do usuário</p>
+                <input type="text" id="username" th:field="*{username}">
+
+                <p class="input-text" id="email-text" >Email</p>
+                <input type="email" id="email" th:field="*{email}">
+
+                <p class="input-text" id="password-text">Senha</p>
+                <input type="text" id="password" th:field="*{password}">
+
+                <p class="input-text" id="firstName-text">Primeiro nome</p>
+                <input type="text" id="firstName" th:field="*{firstName}">
+
+                <p class="input-text" id="lastName-text">Último nome</p>
+                <input type="text" id="lastName" th:field="*{lastName}">
+
+                <button type="submit">Criar conta</button>
+            </form>
+            
+        </main>
+
+    </body>
+</html>

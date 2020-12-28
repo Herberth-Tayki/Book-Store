@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/main/main.css">
+        <link rel="stylesheet" href="/css/main/header.css">
+        <link rel="stylesheet" href="/css/index/index.css">
+        <link rel="stylesheet" href="/css/index/index-mobile.css">
+
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;600;800&display=swap" rel="stylesheet"> 
+        <title>Books Library</title>
+    </head>
+
+    <body>
+        <header>
+            <div class="container">
+                
+                <form action="searchBook" method="GET">
+                    <input type="text" id="search" name="search" placeholder="Encontre seu livro favorito" required>
+            
+                    <button type="submit" title="Search">
+                        <img src="/images/search-icon.svg" alt="">
+                    </button>
+                </form>
+
+                <a class="login-button" href="/loginPage">
+                    <img src="/images/login-icon.png" alt="Login Image">
+
+                    <span>
+                        <p>Entre ou </p>
+                        <p>Cadastre-se</p>
+                    </span>
+                </a>
+            </div>
+        </header>
+
+        <main>
+            <div class="image-slider">
+                <img src="https://source.unsplash.com/random" alt="">
+            </div>
+
+            <div class="featured-books">
+                <p class="featured-book-text">Livros em Destaque</p>
+
+                <div class="featured-books-content">
+                    <div class="book-featured">
+                        <div class="image-book-featured">
+                            <img src="https://source.unsplash.com/random?id=1" alt="">
+                        </div>
+
+                        <a href=""><span>Os Sofrimentos do Jovem Werther</span></a>
+                    </div>
+
+                    <div class="book-featured">
+                        <div class="image-book-featured">
+                            <img src="https://source.unsplash.com/random?id=2" alt="">
+                        </div>
+
+                        <a href=""><span>Harry Potter and the Philosopher's Stone</span></a>
+                    </div>
+
+                    <div class="book-featured">
+                        <div class="image-book-featured">
+                            <img src="https://source.unsplash.com/random?id=3" alt="">
+                        </div>
+
+                        <a href=""><span>Java: How to Program</span></a>
+                    </div>
+
+                    <div class="book-featured">
+                        <div class="image-book-featured">
+                            <img src="https://source.unsplash.com/random?id=4" alt="">
+                        </div>
+
+                        <a href=""><span>Harry Potter and the Philosopher's Stone</span></a>
+                    </div>
+
+                    <div class="book-featured">
+                        <div class="image-book-featured">
+                            <img src="https://source.unsplash.com/random?id=5" alt="">
+                        </div>
+
+                        <a href=""><span>Harry Potter and the Philosopher's Stone</span></a>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+    </body>
+</html>

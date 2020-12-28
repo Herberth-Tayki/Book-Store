@@ -1,0 +1,97 @@
+@media(min-width: 760px){
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    main .found-books{
+        width: 85%;
+    
+        margin-top: 6rem;
+    }
+    
+    main .found-books .found-book{
+        display: grid;
+        grid-template-rows: 72% 28%;
+        
+        width: 17%;
+        height: 45vh;
+    
+        float: left;
+    
+        margin-left: 2%;
+    
+        background-color: white;
+    
+        margin-top: 3rem;
+    
+        overflow: hidden;
+    
+        border-radius: 4px;
+    
+        box-shadow: 2px 5px 12px -1px rgba(0,0,0,0.31);
+    }
+    
+    main .found-books .found-book .found-book-image{
+        width: 100%;
+        height: 100%;
+        
+        object-fit: cover;
+    }
+    
+    main .found-books .found-book .found-book-image img{
+        width: 100%;
+        height: 100%;
+    }
+    
+    main .found-books .found-book .go-to-book{
+        display: grid;
+        grid-template-rows: 40% 60%;
+    }
+
+    main .found-books .found-book .go-to-book p{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        width: 100%;
+        height: 100%;
+
+        color: black;
+
+        font-size: 100%;
+    }
+
+    main .found-books .found-book .go-to-book p span{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        width: 100%;
+        height: 100%;
+
+        font-size: clamp(10px, 16px, 19px);
+    }
+    
+    main .found-books .found-book .go-to-book a{
+        display: flex;
+    
+        color: black;
+    }
+
+    main .found-books .found-book .go-to-book a span{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        width: 100%;
+
+        margin-left: 5px;
+
+        font-size: clamp(12px, 14px, 16px);
+    }
+}
+
+
+

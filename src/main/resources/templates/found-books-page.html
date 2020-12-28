@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/main/main.css">
+        <link rel="stylesheet" href="/css/main/header.css">
+        <link rel="stylesheet" href="/css/found-books-page/found-books-page.css">
+        <link rel="stylesheet" href="/css/found-books-page/found-books-page-mobile.css">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;600;800&display=swap" rel="stylesheet">
+        <title>Found Books</title>
+    </head>
+
+    <body>
+        <header>
+            <div class="container">
+                <form action="searchBook" method="GET">
+                    <input type="text" id="search" name="search" placeholder="Encontre seu livro favorito" required>
+
+                    <button type="submit" title="Search">
+                        <img src="/images/search-icon.svg" alt="">
+                    </button>
+                </form>
+
+                <a class="login-button" href="/loginPage">
+                    <img src="/images/login-icon.png" alt="Login Image">
+
+                    <span>
+                        <p>Entre ou </p>
+                        <p>Cadastre-se</p>
+                    </span>
+                </a>
+            </div>
+        </header>
+
+        <main>
+            <div class="found-books">
+                <div class="found-book" th:each="foundBook : ${foundBooks}">
+                    <div class="found-book-image">
+                        <img src="https://source.unsplash.com/random?" alt="">
+                    </div>
+
+                    <div class="go-to-book">
+                        <p><span th:text=="'R$' + ${foundBook.price}"></span></p>
+                        <a href="" th:href="@{'/book?nameOfBook=' + ${foundBook.nameOfBook}}"><span th:text="${foundBook.nameOfBook}"></span></a>
+                    </div>
+                </div>
+
+                <div class="found-book" th:each="foundBook : ${foundBooks}">
+                    <div class="found-book-image">
+                        <img src="https://source.unsplash.com/random?" alt="">
+                    </div>
+
+                    <div class="go-to-book">
+                        <p><span th:text=="'R$' + ${foundBook.price}"></span></p>
+                        <a href="" th:href="@{'/book?nameOfBook=' + ${foundBook.nameOfBook}}"><span th:text="${foundBook.nameOfBook}"></span></a>
+                    </div>
+                </div>
+
+                <div class="found-book" th:each="foundBook : ${foundBooks}">
+                    <div class="found-book-image">
+                        <img src="https://source.unsplash.com/random?" alt="">
+                    </div>
+
+                    <div class="go-to-book">
+                        <p><span th:text=="'R$' + ${foundBook.price}"></span></p>
+                        <a href="" th:href="@{'/book?nameOfBook=' + ${foundBook.nameOfBook}}"><span th:text="${foundBook.nameOfBook}"></span></a>
+                    </div>
+                </div>
+                <div class="found-book" th:each="foundBook : ${foundBooks}">
+                    <div class="found-book-image">
+                        <img src="https://source.unsplash.com/random?" alt="">
+                    </div>
+
+                    <div class="go-to-book">
+                        <p><span th:text=="'R$' + ${foundBook.price}"></span></p>
+                        <a href="" th:href="@{'/book?nameOfBook=' + ${foundBook.nameOfBook}}"><span th:text="${foundBook.nameOfBook}"></span></a>
+                    </div>
+                </div>
+                <div class="found-book" th:each="foundBook : ${foundBooks}">
+                    <div class="found-book-image">
+                        <img src="https://source.unsplash.com/random?" alt="">
+                    </div>
+
+                    <div class="go-to-book">
+                        <p><span th:text=="'R$' + ${foundBook.price}"></span></p>
+                        <a href="" th:href="@{'/book?nameOfBook=' + ${foundBook.nameOfBook}}"><span th:text="${foundBook.nameOfBook}"></span></a>
+                    </div>
+                </div>
+                <div class="found-book" th:each="foundBook : ${foundBooks}">
+                    <div class="found-book-image">
+                        <img src="https://source.unsplash.com/random?" alt="">
+                    </div>
+
+                    <div class="go-to-book">
+                        <p><span th:text=="'R$' + ${foundBook.price}"></span></p>
+                        <a href="" th:href="@{'/book?nameOfBook=' + ${foundBook.nameOfBook}}"><span th:text="${foundBook.nameOfBook}"></span></a>
+                    </div>
+                </div>
+                <div class="found-book" th:each="foundBook : ${foundBooks}">
+                    <div class="found-book-image">
+                        <img src="https://source.unsplash.com/random?" alt="">
+                    </div>
+
+                    <div class="go-to-book">
+                        <p><span th:text=="'R$' + ${foundBook.price}"></span></p>
+                        <a href="" th:href="@{'/book?nameOfBook=' + ${foundBook.nameOfBook}}"><span th:text="${foundBook.nameOfBook}"></span></a>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

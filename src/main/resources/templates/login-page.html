@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/main/main.css">
+        <link rel="stylesheet" href="/css/main/header.css">
+        <link rel="stylesheet" href="/css/login-page/login-page.css">
+        <link rel="stylesheet" href="/css/login-page/login-page-mobile.css">
+
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;600;800&display=swap" rel="stylesheet"> 
+        
+        <title>Login</title>
+    </head>
+
+    <body>
+        <header>
+        </header>
+
+        <main>
+
+            <form action="login" method="POST" th:object="${login}">
+                <h1>Login</h1>
+
+                <p class="input-text" id="email-text">Email</p>
+                <input type="email" id="email" th:field="*{email}">
+
+                <p class="input-text" id="password-text">
+                    Senha
+                    <a href="#">Esqueceu a senha?</a>
+                </p>
+                <input type="password" id="password" th:field="*{password}">
+
+                <button type="submit">Continuar</button>
+
+                <div class="register-text">
+                    <p>Ainda não tem conta na Books Library?</p>
+                    <a class="register-a" href="/registerAccount">cadastre-se</a>
+                </div>          
+            </form>
+            
+        </main>
+
+    </body>
+</html>

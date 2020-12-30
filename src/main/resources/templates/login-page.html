@@ -22,11 +22,11 @@
             <form action="login" method="POST" th:object="${login}">
                 <h1>Login</h1>
 
-                <p class="input-text" id="email-text">Email</p>
+                <p class="input-text" id="email-text">Email:</p>
                 <input type="email" id="email" th:field="*{email}">
 
                 <p class="input-text" id="password-text">
-                    Senha
+                    Senha:
                     <a href="#">Esqueceu a senha?</a>
                 </p>
                 <input type="password" id="password" th:field="*{password}">

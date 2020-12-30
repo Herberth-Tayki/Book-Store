@@ -17,6 +17,8 @@ public class Book {
     private String price;
     private String yearOfRelease;
     private String publishingCompany;
+    private String isbn;
+    private int numberOfPages;
 
     public Integer getId() {
         return id;
@@ -80,5 +82,21 @@ public class Book {
 
     public void setPublishingCompany(String publishingCompany) {
         this.publishingCompany = publishingCompany;
+    }
+
+    public String getIsbn() {
+        return isbn;
+    }
+
+    public void setIsbn(String isbn) {
+        this.isbn = isbn;
+    }
+
+    public int getNumberOfPages() {
+        return numberOfPages;
+    }
+
+    public void setNumberOfPages(int numberOfPages) {
+        this.numberOfPages = numberOfPages;
     }
 }

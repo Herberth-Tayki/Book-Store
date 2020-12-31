@@ -44,21 +44,5 @@
     <li style="margin-bottom: 5px;">Spring Boot - Java Framework</li>
     <li style="margin-bottom: 5px;">PostgreSQL - Database</li>
     <li style="margin-bottom: 5px;">Thymeleaf - Template Engine</li>
-    <li style="margin-bottom: 5px;">Java Persistene API</li>
+    <li style="margin-bottom: 5px;">Java Persistence API</li>
 </ul>
-
-    
-
-    
-
-
-
-
-
-
-
-
-
-
-
-

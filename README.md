@@ -29,7 +29,6 @@
     <li style="margin-bottom: 5px;">Buy your favorite books</li>
     <li style="margin-bottom: 5px;">Get information about the books(description, author, isbn, number of pages, etc)</li>
     <li style="margin-bottom: 5px;">Search for books and their prices in our store</li>
-    <li style="margin-bottom: 5px;">Account</li>
 </ul>
 
 <h2 style="border-bottom: solid rgb(80, 74, 74) 1px; margin-top: 30px; margin-bottom: 20px;">Built With</h2>
